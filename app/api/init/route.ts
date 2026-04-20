@@ -2,11 +2,14 @@ import { NextResponse } from "next/server";
 import { initDB } from "@/lib/db";
 import sql from "@/lib/db";
 
+export async function GET() {
+  return POST();
+}
+
 export async function POST() {
   try {
     await initDB();
 
-    // Seed default data if empty
     const existingAgents = await sql`SELECT id FROM agents LIMIT 1`;
     if (existingAgents.length === 0) {
       await sql`
