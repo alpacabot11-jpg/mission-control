@@ -19,6 +19,7 @@ import {
   Building2,
   TrendingUp,
   Mail,
+  BarChart2,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -33,6 +34,7 @@ const nav = [
   { label: "Team", icon: Users, href: "/team" },
   { label: "Office", icon: Building2, href: "/office" },
   { label: "Trader", icon: TrendingUp, href: "/trader" },
+  { label: "Alpaca", icon: BarChart2, href: "/alpaca" },
   { label: "Email Agent", icon: Mail, href: "/email" },
   { label: "Tools", icon: Wrench, href: "/tools" },
   { label: "Settings", icon: Settings, href: "/settings" },
