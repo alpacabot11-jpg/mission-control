@@ -17,6 +17,7 @@ import {
   FileText,
   Users,
   Building2,
+  TrendingUp,
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -30,6 +31,7 @@ const nav = [
   { label: "Documents", icon: FileText, href: "/documents" },
   { label: "Team", icon: Users, href: "/team" },
   { label: "Office", icon: Building2, href: "/office" },
+  { label: "Trader", icon: TrendingUp, href: "/trader" },
   { label: "Tools", icon: Wrench, href: "/tools" },
   { label: "Settings", icon: Settings, href: "/settings" },
 ];
